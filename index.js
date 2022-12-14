@@ -18,6 +18,11 @@ function nodePlatformToWabtPlatform(version, nodePlatform) {
             versionPartsStr = version.split('.');
             versionParts = versionPartsStr.map(function(item) {return Number(item);})
             has12Extension = (versionParts.length === 3) && (versionParts[2] >= 30);
+            core.info(`versionPartsStr: ${versionPartsStr}`);
+            core.info(`versionParts: ${versionParts}`);
+            core.info(`versionParts.length: ${versionParts.length}`);
+            core.info(`versionParts[2]: ${versionParts[2]}`);
+            core.info(`has12Extension: ${has12Extension}`);
             return has12Extension ? "macos-12" : "macos";
         case "linux":
             return "ubuntu";

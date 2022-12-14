@@ -1,4 +1,4 @@
-name: 'Set up wabt'
+name: 'Set up wabt (temp with macos fixes)'
 description: 'Set up a specific version of wabt and add the command-line tools to the PATH'
 inputs:
   wabt-version:
